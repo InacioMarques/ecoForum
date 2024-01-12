@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  /* box-sizing: border-box; FOI AQUI QUE DEU MERDA NACIO */
+  font-family: "Poppins", sans-serif;
+}
+
+.help {
+  margin-bottom: 3%;
+}
+
+.justifyContent {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionAdd {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: fit-content;
+}
+
+.containerAdd {
+  max-width: 800px;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0px;
+}
+.containerAdd .text {
+  width: 100%;
+  margin-right: 2em;
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: #418d66;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.containerAdd form {
+  padding: 30px 0 0 0;
+}
+.containerAdd form .form-row {
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+}
+.marginRow {
+  margin-bottom: 2em !important;
+}
+.form-rowAdd .input-dataAdd {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.form-rowAdd .textareaAdd {
+  height: 70px;
+}
+
+.input-dataAdd input,
+.textareaAdd textarea {
+  color: white;
+  background: transparent;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid white;
+}
+.input-dataAdd input:focus ~ label,
+.textareaAdd textarea:focus ~ label,
+.input-dataAdd input:valid ~ label,
+.textareaAdd textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #418d66;
+}
+.textareaAdd textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.input-dataAdd label {
+  color: white;
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textareaAdd label {
+  width: 100%;
+  bottom: 40px;
+  color: white;
+  background: transparent;
+}
+.input-dataAdd .underlineAdd {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-dataAdd .underlineAdd:before {
+  border-color: transparent;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #418d66;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-dataAdd input:focus ~ .underlineAdd:before,
+.input-dataAdd input:valid ~ .underlineAdd:before,
+.textareaAdd textarea:focus ~ .underlineAdd:before,
+.textareaAdd textarea:valid ~ .underlineAdd:before {
+  transform: scale(1);
+}
+.submit-btnAdd .input-dataAdd {
+  overflow: hidden;
+  height: 45px !important;
+  width: 25% !important;
+}
+.submit-btnAdd .input-dataAdd .innerAdd {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: #418d66;
+}
+.submit-btnAdd .input-dataAdd:hover .inner {
+  left: 0;
+}
+.submit-btnAdd .input-dataAdd input {
+  background: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+.divInputFile {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inputFileP {
+  border: #ffffff;
+  border-style: dotted;
+  width: 100%;
+  height: 10em;
+  text-align: center;
+  line-height: 170px;
+  color: #ffffff;
+  font-family: Arial;
+}
+.inputFile {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10em !important;
+  outline: none;
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .sectionAdd {
+    height: 70dvh;
+    align-items: normal;
+  }
+  .textSection {
+    display: block;
+  }
+
+  .containerAdd .text {
+    font-size: 30px;
+  }
+  .containerAdd form {
+    padding: 10px 0 0 0;
+  }
+  .containerAdd form .form-row {
+    margin-bottom: 2em;
+    display: flex;
+  }
+  form .form-rowAdd .input-dataAdd {
+    margin: 1em !important;
+  }
+  .submit-btnAdd .input-dataAdd {
+    width: 40% !important;
+  }
+}

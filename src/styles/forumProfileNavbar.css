@@ -1,0 +1,124 @@
+.sectionForumProfile{
+    border-bottom: 2px solid white;
+}
+
+.mdForumProfile{
+    color: white;
+    position: absolute;
+    top: 1em;
+    background-color: rgba(17, 17, 17, 0.7);
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: transparent;
+    border-radius: 50%;
+    height: max-content;
+    max-width: 8%;
+}
+
+.star{
+    right: 1em;
+}
+
+.arrowLeft{
+    left: 1em;
+}
+
+.backgroundImg{
+    width: 100%;
+    height: auto;
+}
+
+.innerImg{
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: #1a1a1a;
+    border-radius: 50%;
+    position: relative;
+    top: -9dvh;
+    left: 5%;
+}
+
+.textForumNavbar{
+    position: relative;
+    top: -6em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.textForumNavbar > h1{
+    color: white;
+    font-size: 3em;
+}
+
+.textForumNavbar > div {
+    width: 100%;
+}
+
+.textForumNavbar > div > p{
+    color: white;
+    width: 100% ;
+    -moz-hyphens:auto;
+    -ms-hyphens:auto;
+    -webkit-hyphens:auto;
+    hyphens:auto;
+    word-wrap:break-word;
+}
+
+.innerAdd{
+    border-style: solid;
+    border-width: 0.5em;
+    border-color: transparent;
+    border-radius: 50%;
+    size: 150;
+    color: white;
+    background-color: #418d66;
+    left: 20dvw
+}
+
+.divicon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topSectionPost{
+    background-color: #111111;
+    border-color: #418d66;
+    border-radius: 15px;
+    border-style: solid;
+    height: 30vh;
+    width: 99.7%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: -100%;
+    filter: blur(8px);
+    transition: 0.85s;
+    z-index: 1;
+}
+
+.labelMensage{
+    position: relative !important;
+}
+
+.topSectionPost > div{
+    flex: 100%;
+}
+
+.topSectionPost.active {
+    top: 0%;
+    transition: 0.35s;
+    filter: blur(0px);
+  }
+
+@media screen and (max-width: 768px) {
+    .innerImg{
+        width: 27%;
+    }
+
+    .textForumNavbar > h1{
+        font-size: 2em;
+    } 
+
+}

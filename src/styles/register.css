@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+/* 
+Use em or rem for things like: font-size, padding, margin
+Use % for width or height of containers, divs, or other large components
+Use vh and vw to size sections as a percentage of the screen size 
+(for example, I use this a lot to force sections with background images to be full-screen (vh) and/or full-width (vw))
+Only use px for very minor things, for example: border-width
+
+em: Relative to the parent element
+rem: Relative to the root element (HTML tag)
+%: Relative to the parent element
+vw: Relative to the viewport’s width
+vh: Relative to the viewport’s height
+*/
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 1em;
+  }
+  .signUp {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #3a3a3a;
+    box-shadow: 16px 16px 32px #2f2f2f, -16px -16px 32px #242424;
+    border-radius: 8px;
+  }
+
+  .inputBox,
+  .emailInput {
+    position: relative;
+    width: 250px;
+  }
+
+  .inputBox input,
+  .emailInput input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Poppins, sans-serif;
+    background: transparent;
+    border-left: 2px solid #a1a1a1;
+    border-bottom: 2px solid #a1a1a1;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+
+  .inputBox span,
+  .emailInput span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #418d66;
+    letter-spacing: 0.2em;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    border: 2px;
+  }
+
+  .emailInput input:valid ~ span,
+  .emailInput input:focus ~ span {
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #418d66;
+    letter-spacing: 0.2em;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    border: 2px;
+  }
+
+  .inputBox input:valid,
+  .inputBox input:focus,
+  .emailInput input:valid,
+  .emailInput input:focus {
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+
+  .inputBox input:hover,
+  .emailInput input:hover {
+    border-color: #418d66;
+  }
+  .inputBox input:focus,
+  .emailInput input:focus {
+    border-color: #418d66;
+  }
+
+  .register {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #a1a1a1;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 4em;
+    margin-bottom: 3em;
+  }
+
+  .register:hover {
+    background-color: #418d66;
+    border-color: #ffffff;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin-top: 3em;
+  }
+  .signUp {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #3a3a3a;
+    box-shadow: 16px 16px 32px #2f2f2f, -16px -16px 32px #242424;
+    border-radius: 8px;
+  }
+
+  .inputBox,
+  .emailInput {
+    position: relative;
+    width: 250px;
+  }
+
+  .inputBox input,
+  .emailInput input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: Poppins, sans-serif;
+    background: transparent;
+    border-left: 2px solid #a1a1a1;
+    border-bottom: 2px solid #a1a1a1;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+
+  .inputBox span,
+  .emailInput span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    transform: translateX(120px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #418d66;
+    letter-spacing: 0.2em;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    border: 2px;
+  }
+
+  .emailInput input:valid ~ span,
+  .emailInput input:focus ~ span {
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #418d66;
+    letter-spacing: 0.2em;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    border: 2px;
+  }
+  .inputBox input:hover,
+  .emailInput input:hover {
+    border-color: #418d66;
+  }
+  .inputBox input:focus,
+  .emailInput input:focus {
+    border-color: #418d66;
+  }
+
+  .input {
+    transition: background 0.2s, border 0.2s;
+  }
+
+  .register {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #a1a1a1;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 4em;
+    margin-bottom: 3em;
+  }
+
+  .register:hover {
+    background-color: #418d66;
+    border-color: #ffffff;
+    color: white;
+  }
+}

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+.informationDiv a {
+  /* ISTO AQUI POS ESTILOS NO SITE INTEIRO DESNECESSARIO POR CLASS ATRAS NACIO */
+  text-decoration: none;
+  color: white;
+}
+
+.informationDiv p {
+  /* ISTO AQUI POS ESTILOS NO SITE INTEIRO DESNECESSARIO POR CLASS ATRAS NACIO */
+  color: white;
+  font-size: 1em;
+  font-family: Poppins, sans-serif;
+  max-width: 30em;
+}
+
+.informationDiv h1 {
+  /* ISTO AQUI POS ESTILOS NO SITE INTEIRO DESNECESSARIO POR CLASS ATRAS NACIO */
+  color: #418d66;
+  font-size: 1em;
+  font-family: Poppins;
+  margin-bottom: 1em !important;
+  font-weight: bolder;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #111111;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 50%;
+}
+
+.informationDiv {
+  max-width: 30em;
+  margin: 1em;
+  margin-right: 4em;
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.itens {
+  margin-bottom: 0.5em;
+}
+
+.itens:hover {
+  color: #418d66;
+}
+
+.companylogoDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 40%;
+}
+
+.logo {
+  width: 5em;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 769px) {
+  .companylogoDiv {
+    flex: 100%;
+  }
+}

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+@media screen and (min-width: 769px) {
+  .navbarApp{
+    border-style: solid;
+    border-style: ridge;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+    .appProfile{
+        height: 40%;
+    }
+
+    .appProfile > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .appProfile > div > h1{
+      margin: 2%;
+      width: fit-content;
+      color: white;
+      font-size: 200%;
+      text-align: center;
+    }
+
+    .appProfile > div > h4{
+      margin: 2%;
+      color: white;
+      font-size: 100%;
+    }
+
+    .imgAppProfile{
+        margin: 2%;
+        height: auto;
+        width: 30%;
+        border-style: solid;
+        border-width: 0.5em;
+        border-color: transparent;
+        border-radius: 50%;
+    }
+
+    .imgAppProfile:hover{
+        background-color: transparent;
+    }
+
+    .side-meno {
+        background-color: #111111;
+        height: 100dvh;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 1;
+        left: -100%;
+        filter: blur(8px);
+        transition: 0.85s;
+        z-index: 1;
+      }
+    
+      .side-meno.active {
+        left: 0;
+        transition: 0.35s;
+        filter: blur(0px);
+        animation: imgOpacity 1s;
+      }
+
+      .exit > a{
+        height: 3em;
+      }
+
+      .exit > a:hover{
+        background-color: red;
+      }
+      
+      .inputSearch {
+	
+        position:relative;
+        
+        font-size: 1.5em;
+        font-family: Poppins, sans-serif;
+        
+        background: linear-gradient(21deg, #10abff, #1beabd);
+        
+        padding: 3px;
+        
+        display: inline-block;
+        
+        border-radius: 9999em;
+        
+        *:not(span) {
+          position: relative;
+          display: inherit;
+          border-radius: inherit;
+          margin: 0;
+          border: none;
+          outline: none;
+          padding: 0 .325em;
+          z-index: 1;
+          
+          &:focus + span {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        
+        .spanSeach {
+          
+          transform: scale(.993, .94); 
+          transition: transform .5s, opacity .25s;
+          opacity: 0; 
+          
+          position:absolute;
+          z-index: 0; 
+          margin:4px; 
+          left:0;
+          top:0;
+          right:0;
+          bottom:0;
+          border-radius: inherit;
+          pointer-events: none; 
+          
+          box-shadow: inset 0 0 0 3px #fff,
+            0 0 0 4px #fff,
+            3px -3px 30px #1beabd, 
+            -3px 3px 30px #10abff;
+        }
+        
+      }
+
+      .inputSearch_input{
+        height: 5dvh;
+        width: 30dvw;
+      }
+      
+}
+
+@media screen and (max-width: 768px) {
+  .navbarApp{
+    border-style: solid;
+    border-style: ridge;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .imgAppProfile{
+    margin: 5%;
+    height: auto;
+    width: 30%;
+    border-color: transparent;
+}
+
+  .imgHome{
+    display: block;
+    height: auto;
+    width: 60%;
+  }
+  .appProfile{
+    height: fit-content;
+}
+
+.appProfile > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appProfile > div > h1{
+  margin: 2%;
+  width: fit-content;
+  color: white;
+  font-size: 100%;
+  text-align: center;
+}
+
+.exit > a:hover{
+  background-color: red;
+}
+
+.appProfile > div > h4{
+  margin: 2%;
+  color: white;
+  font-size: 50%;
+}
+
+.side-text{
+  margin: 0.5em;
+}
+
+    .side-meno {
+        background-color: #111111;
+        height: 100dvh;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 1;
+        left: -100%;
+        filter: blur(8px);
+        transition: 0.85s;
+        z-index: 1;
+      }
+    
+      .side-meno.active {
+        left: 0;
+        transition: 0.35s;
+        filter: blur(0px);
+      }
+
+      .inputSearch {
+	
+        position:relative;
+        
+        font-size: 1.5em;
+        font-family: Poppins, sans-serif;
+        
+        background: linear-gradient(21deg, #418d66, #418d66);
+        
+        padding: 3px;
+        
+        display: inline-block;
+        
+        border-radius: 9999em;
+        
+        *:not(span) {
+          display: inherit;
+          border-radius: inherit;
+          margin: 0;
+          border: none;
+          outline: none;
+          padding: 0 .325em;
+          z-index: 1;
+          
+          &:focus + span {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        
+        .spanSeach {
+          
+          transform: scale(.993, .94); 
+          transition: transform .5s, opacity .25s;
+          opacity: 0; 
+          
+          position:absolute;
+          z-index: 0; 
+          margin:4px; 
+          left:0;
+          top:0;
+          right:0;
+          bottom:0;
+          border-radius: inherit;
+          pointer-events: none; 
+          
+          box-shadow: inset 0 0 0 3px #fff,
+            0 0 0 4px #fff,
+            3px -3px 30px #418d66, 
+            -3px 3px 30px #418d66;
+        }
+        
+      }
+
+      .inputSearch_input{
+        height: 5dvh;
+        width: 60dvw;
+      }
+}

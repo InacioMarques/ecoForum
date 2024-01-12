@@ -1,0 +1,9 @@
+:root {
+  background-color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}

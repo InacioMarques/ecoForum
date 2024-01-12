@@ -1,0 +1,276 @@
+.section{
+    width: 100% !important;
+    display: flex;
+    height: 100dvh;
+}
+
+.h1Titles{
+  margin-top: 1em;
+  font-size: 2.8em;
+  text-align: center;
+  width: 100%;
+}
+
+.logoText{
+    background-color: black;
+    align-items: center;
+    animation: animation 2s;
+}
+
+.logoText > div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logoTextH1{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    flex: 100%;
+}
+
+.textImage{
+    width: 50%;
+    flex: 100%;
+}
+
+.isEcoforum{
+    margin: 0px;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divPForum{
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divPForum > p{
+  width: 70%;
+  color: #418d66;
+  font-size: 300%;
+  text-align: center;
+}
+
+.theApp{
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: bold;
+}
+
+.theApp > div{
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.theStore{
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theStore > div{
+  flex: 100%;
+}
+
+.regist{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes animation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.carousel {
+    width: 100%;
+    overflow-x: scroll;
+    padding: 30px;
+    padding-top: 80px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+    display: grid;
+    column-gap: 5em;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+  }
+  
+  .categories__title {
+   color: rgb(77, 55, 102);
+    font-size: 28px;
+    position: absolute;
+    padding-left: 30px;
+  }
+  
+  .carousel-item {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #95bcd6;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 70px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: 1000ms all;
+    transition: 1000ms all;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    position: relative;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    opacity: 1;
+  }
+  
+  .carousel-item__img {
+    width: 200px;
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .carousel-item__details {
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 0.9)),
+      to(rgba(0, 0, 0, 0))
+    );
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    font-size: 10px;
+    opacity: 0;
+    -webkit-transition: 450ms opacity;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .carousel-item__details:hover {
+    opacity: 1;
+  }
+  
+  .carousel-item__details span {
+    /* width: 10px;
+    height: 10px; */
+    font-size: 0.9rem;
+    color: #2ecc71;
+    /* background-color: white; */
+  }
+  
+  .carousel-item__details .controls {
+    padding-top: 180px;
+  }
+  
+  .carousel-item__details .carousel-item__details--title,
+  .carousel-item__details--subtitle {
+    color: #fff;
+    margin: 5px 0;
+  }
+  
+  .carddd {
+    margin-bottom: 5em;
+    width: 24em;
+    height: 36em;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  }
+  .carddd img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+  }
+  .carddd h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    font-family: Poppins, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .carddd p, .carddd a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+  }
+  .carddd p {
+    inset: auto auto 80px 30px;
+  }
+  .carddd a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+  .carddd:hover h2 {
+    inset: auto auto 220px 30px;
+    transition: inset 0.3s ease-out;
+  }
+  .carddd:hover p, .carddd:hover a {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+  .carddd:hover img {
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+  }
+  
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 768px) {
+  .heightAuto{
+    height: auto;
+  }
+
+  .carousel__container {
+    grid-template-columns: auto;
+  }
+
+  .divPForum > p {
+    font-size: 160%;
+  }
+  }

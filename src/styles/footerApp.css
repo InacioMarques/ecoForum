@@ -1,0 +1,35 @@
+.bodyFooterApp > section {
+  background-color: #1a1a1a;
+  border-style: ridge;
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  position: fixed;
+  height: 10dvh;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerApp-itens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #3b3b3b;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: solid 1px;
+  border-radius: 15px;
+  border-color: #418d66;
+}
+.footerApp-itens:hover {
+  color: #5dcc93 !important;
+  transition: 0.3s ease-out;
+}
+
+.footerApp-itens.active {
+  color: #5dcc93 !important;
+}
